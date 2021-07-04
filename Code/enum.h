@@ -1,0 +1,97 @@
+#pragma once
+enum Symbol {
+	IDENFR = 0,
+	INTCON = 1,
+	CHARCON = 2,
+	STRCON = 3,
+	CONSTTK = 4,
+	INTTK = 5,
+	CHARTK = 6,
+	VOIDTK = 7,
+	MAINTK = 8,
+	IFTK = 9,
+	ELSETK,
+	SWITCHTK,
+	CASETK,
+	DEFAULTTK,
+	WHILETK,
+	FORTK,
+	SCANFTK,
+	PRINTFTK,
+	RETURNTK,
+	PLUS,
+	MINU,
+	MULT,
+	DIV,
+	LSS,
+	LEQ,
+	GRE,
+	GEQ,
+	EQL,
+	NEQ,
+	COLON,
+	ASSIGN,
+	SEMICN,
+	COMMA,
+	LPARENT,
+	RPARENT,
+	LBRACK,
+	RBRACK,
+	LBRACE,
+	RBRACE
+};
+enum IdenType {
+	INT = 0,
+	CHAR,
+	VOID
+};
+enum Operation {
+	ADD,
+	SUB,
+	MUL,
+	DIVI,
+	GLOBAL_PARA,
+	FUN_PARA,
+	PRINT,
+	STRINGDATA,
+	GLOBAL_SCANF,
+	FUN_SCANF,
+	GLOBAL_ASS,
+	FUN_ASS,
+	STORE_ARRAY,
+	LABEL,
+	DATA,
+	TEXT,
+	SET,
+	GET_GPARA,
+	GET_FPARA,
+	GET_FPARA2,
+	MOVE,
+	JLABEL,
+	CAOF1,//calculate array offset one dim
+	CAOF2F,//calculate array offset two dim
+	CAOF2G,
+	LOAD_ARRAY,
+	BRANCH,
+	RECOVERREG,
+	JAL,
+	JR
+};
+enum FactorType {
+	INTCONST,
+	CHARCONST, 
+	IDENTIFIER,
+	RETURNFUN,
+	REGISTER,
+	OP
+};
+enum OpType {
+	OpAdd,
+	OpSub,
+	OpMult,
+	OpDiv,
+	DIM1,
+	DIM2,
+	CALLFUN,
+	NOTOP
+};
